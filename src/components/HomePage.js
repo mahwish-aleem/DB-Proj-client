@@ -30,7 +30,7 @@ function HomePage(){
 
   const removeMember = () => {
     // only someone who is in the EC or Directorate can add member
-    if(department === "EC")
+    if(department === "EC" || position === "Director")
     {
       return(
         navigate("/removemember/" + department + "/" + position + "/" + rollno)
@@ -48,7 +48,7 @@ function HomePage(){
   };
 
   const removeDirector = () => {
-    // only someone who is in the EC or Directorate can add member
+    // only someone who is in the EC 
     if(department === "EC")
     {
       return(
