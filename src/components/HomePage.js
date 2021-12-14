@@ -380,10 +380,10 @@ function HomePage(){
                Log Out
             </button>
 
-            <button
+            {/* <button
                onClick={(event) => [PopulateData(), navigate("/")]}>
                POPULATE
-            </button>
+            </button> */}
 
         </div>
 

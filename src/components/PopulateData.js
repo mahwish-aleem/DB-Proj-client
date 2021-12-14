@@ -12,7 +12,7 @@ function PopulateData() {
     const numbers = '0123456789';
     const noZero = '123456789';
     const alphabets = 'abcdefghijklmnopqrstuvwxyz';
-    const numOfEntries = 10;
+    const numOfEntries = 200;
 
     const listOfDepartments = ["Design", "Events", "Finance", "HR", "IT", "Logistics", "Management", "Marketing", "Operations", "Outreach", "Social Media"];
 
@@ -105,23 +105,23 @@ function PopulateData() {
 
            
             });
-            Axios.post("https://group11-db-project.herokuapp.com/register",{
-                rollNo: rollNo,
-                email: email,
-                password: password,
-                }).then((response) => {
-                    // if user does not exist in members table, sign up fails
-                    // if(response.data === "Does not exist")
-                    // {
-                    //     alert("Failed! Sign up not authorized.");
-                    //     // takes user back to welcome page
-                    // }
-                    // else if(response.data === "Duplicate Error")
-                    // {
-                    //     alert("This Roll No. already has an account.");
-                    // }
+            // Axios.post("https://group11-db-project.herokuapp.com/register",{
+            //     rollNo: rollNo,
+            //     email: email,
+            //     password: password,
+            //     }).then((response) => {
+            //         // if user does not exist in members table, sign up fails
+            //         // if(response.data === "Does not exist")
+            //         // {
+            //         //     alert("Failed! Sign up not authorized.");
+            //         //     // takes user back to welcome page
+            //         // }
+            //         // else if(response.data === "Duplicate Error")
+            //         // {
+            //         //     alert("This Roll No. already has an account.");
+            //         // }
 
-                });
+            //     });
         }
 
         console.log("MEMBERS AND USERS ADDED!");
@@ -195,8 +195,8 @@ function PopulateData() {
         
     }
 
-    generateMembersAndUsers();
-    generateSponsors();
+    //generateMembersAndUsers();
+    //generateSponsors();
     generateTasks();
 
     // input fields and buttons
