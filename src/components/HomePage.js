@@ -49,7 +49,7 @@ function HomePage(){
 
   const removeDirector = () => {
     // only someone who is in the EC or Directorate can add member
-    if(department === "EC" || position === "Director")
+    if(department === "EC")
     {
       return(
         navigate("/removedirector/" + department + "/" + position + "/" + rollno)
